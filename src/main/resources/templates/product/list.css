@@ -1,0 +1,12 @@
+.a img{
+    height: 150px;
+    width: 150px;
+}
+
+.poly-item .panel-title{
+    font-size: smaller;
+}
+
+.poly-item-detail img{
+    width: 150px;
+}

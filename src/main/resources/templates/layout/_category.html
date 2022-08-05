@@ -1,0 +1,12 @@
+<div xmlns:th="http://www.thymeleaf.org">
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            <b class="glyphicon glyphicon-briefcause">
+            </b> Danh mục
+        </div>
+    </div>
+    <ul class="list-group">
+       <a lass="list-group-item " aria-current="true" th:each="c:${cates}" th:href="@{|/product/list?cid=${c.id}|}">[[${c.name}]]</a>
+        
+    </ul>
+</div>

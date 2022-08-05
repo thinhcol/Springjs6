@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" th:fragment="dynamic(main)">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js" ></script>
+</head>
+
+<body class="container" ng-app="admin-app" >
+    <header class="row">
+        <h1>WEB ADMIN</h1>
+    </header>
+  
+    <div class="row">
+        <nav class="navbar navbar-inverse" style="font-variant: small-caps;">
+            <div class="container-fluid">
+                <ul class="nav navbar-nav">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="#!product">Products</a></li>
+                    <li><a href="#!authorize">Authorizing</a></li>
+                    <li><a href="/security/logoff">Sign Out</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <main>
+    	<p class="ng-view"></p>
+    </main>
+    <footer class="row">
+        <div class="panel panel-defafult">
+            <div class="panel-body text-center">
+                <h3>FPT POLYTECHNIC 2022</h3>
+            </div>
+        </div>
+    </footer>
+    <script src="../admin/admin-app.js"></script>
+    <script src="../admin/authority/authority-ctrl.js"></script>
+    <script src="../admin/product/product-ctrl.js"></script>
+   
+</body>
+
+</html>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"> </script>
+<script src=https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js></script>
